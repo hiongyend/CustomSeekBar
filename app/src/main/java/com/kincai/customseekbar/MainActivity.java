@@ -15,11 +15,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        CustomSeekBar customSeekBar = findViewById(R.id.seekbar);
+        customSeekBar = findViewById(R.id.seekbar);
         customSeekBar.setMaxProgress(maxProgress);//最大进度s
         customSeekBar.setProgressBarHeight(1.0f);//进度条高度dp 默认1.0f
         customSeekBar.setCacheProgressBarHeight(1.5f);//缓存条高度dp 默认1.5f
-        customSeekBar.setProgressBarColor(android.R.color.holo_green_light);//进度条颜色colorId
+        customSeekBar.setProgressBarColor(android.R.color.darker_gray);//进度条颜色colorId
         customSeekBar.setCacheProgressBarColor(android.R.color.white);//缓存条颜色colorId
         customSeekBar.setTextBgColor(android.R.color.white);//文字背景颜色colorId
         customSeekBar.setTextColor(android.R.color.black);//字体颜色colorId
