@@ -7,11 +7,11 @@
     android:background="#50aa66cc"
     tools:context=".MainActivity">
 
-    
+
     <com.kincai.customseekbar.CustomSeekBar
         android:id="@+id/seekbar"
         android:layout_margin="20dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_centerInParent="true"
         android:layout_height="wrap_content" />
   

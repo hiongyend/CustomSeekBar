@@ -15,15 +15,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        customSeekBar = findViewById(R.id.seekbar);
-        customSeekBar.setMaxProgress(maxProgress);
-        customSeekBar.setProgressBarHeight(1.0f);
-        customSeekBar.setCacheProgressBarHeight(1.5f);
-        customSeekBar.setProgressBarColor(android.R.color.holo_green_light);
-        customSeekBar.setCacheProgressBarColor(android.R.color.white);
-        customSeekBar.setTextBgColor(android.R.color.white);
-        customSeekBar.setTextColor(android.R.color.black);
-        customSeekBar.setTextSize(10);
+        CustomSeekBar customSeekBar = findViewById(R.id.seekbar);
+        customSeekBar.setMaxProgress(maxProgress);//最大进度s
+        customSeekBar.setProgressBarHeight(1.0f);//进度条高度dp
+        customSeekBar.setCacheProgressBarHeight(1.5f);//缓存条高度dp
+        customSeekBar.setProgressBarColor(android.R.color.holo_green_light);//进度条颜色colorId
+        customSeekBar.setCacheProgressBarColor(android.R.color.white);//缓存条颜色colorId
+        customSeekBar.setTextBgColor(android.R.color.white);//文字背景颜色colorId
+        customSeekBar.setTextColor(android.R.color.black);//字体颜色colorId
+        customSeekBar.setTextSize(10);//文字大小sp
+        //设置进度拖动监听
         customSeekBar.setProgressListener(new CustomSeekBar.IProgressListener() {
             @Override
             public void progress(int progress) {
