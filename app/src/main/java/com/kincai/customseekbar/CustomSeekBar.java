@@ -239,7 +239,7 @@ public class CustomSeekBar extends View {
      */
     public void cacheProgress(int progress) {
         this.cacheProgress = progress;
-        invalidate();
+        postInvalidate();
     }
 
     /**
@@ -250,7 +250,7 @@ public class CustomSeekBar extends View {
             return;
         }
         this.progress = progress;
-        invalidate();
+        postInvalidate();
     }
 
     /**
@@ -319,7 +319,7 @@ public class CustomSeekBar extends View {
 
     private void touchUpdate(float x) {
         progress = (int) (x * maxProgress / getWidth());
-        invalidate();
+        postInvalidate();
     }
 
     IProgressListener iProgressListener;
