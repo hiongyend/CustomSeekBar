@@ -29,4 +29,4 @@ customSeekBar.setProgressListener(new CustomSeekBar.IProgressListener() {
 });
 ```
 
-![avatar](https://raw.githubusercontent.com/hiongyend/CustomSeekBar/master/demo1.jpg)
+![avatar](https://raw.githubusercontent.com/hiongyend/CustomSeekBar/master/demo2.png)
