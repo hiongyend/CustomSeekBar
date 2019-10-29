@@ -27,6 +27,10 @@ customSeekBar.setProgressListener(new CustomSeekBar.IProgressListener() {
         MainActivity.this.progress = progress;
     }
 });
+// 设置缓存进度
+customSeekBar.cacheProgress(cacheProgress);
+// 设置进度
+customSeekBar.progress(progress);
 ```
 
 ![avatar](https://raw.githubusercontent.com/hiongyend/CustomSeekBar/master/demo2.png)

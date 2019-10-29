@@ -83,7 +83,7 @@ public class CustomSeekBar extends View {
         progressBarPaint.setColor(progressBarColor);
         progressBarPaint.setAntiAlias(false);
         progressBarPaint.setStyle(Paint.Style.FILL);
-        progressBarPaint.setStrokeCap(Paint.Cap.ROUND);//圆形
+        progressBarPaint.setStrokeCap(Paint.Cap.ROUND);
 
         cacheProgressBarPaint.setColor(cacheProgressBarColor);
         cacheProgressBarPaint.setAntiAlias(false);
@@ -206,8 +206,8 @@ public class CustomSeekBar extends View {
     }
 
     private String getProgressText() {
-        String progressText = formatProgress((int) this.progress);
-        String maxProgressText = formatProgress((int) this.maxProgress);
+        String progressText = formatProgress(this.progress);
+        String maxProgressText = formatProgress(this.maxProgress);
         return progressText + "/" + maxProgressText;
     }
 
