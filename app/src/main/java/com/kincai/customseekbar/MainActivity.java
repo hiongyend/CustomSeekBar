@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
         customSeekBar.setTextBgColor(android.R.color.white);//文字背景颜色colorId
         customSeekBar.setTextColor(android.R.color.black);//字体颜色colorId
         customSeekBar.setTextSize(10);//文字大小sp 默认10sp
-        //设置进度拖动监听
+        // 设置进度拖动监听
+        // 手动拖动进度条会返回当前进度
         customSeekBar.setProgressListener(new CustomSeekBar.IProgressListener() {
             @Override
             public void progress(int progress) {
