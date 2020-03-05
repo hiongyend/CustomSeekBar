@@ -161,7 +161,7 @@ class CustomSeekBar(context: Context, attrs: AttributeSet?, defStyleAttr: Int) :
         val textWidth: Int = getTextWidth(textPaint, progressText)
         // 画文字背景 背景宽高随文字变化而变化
         textBgWidth = textWidth + dp2px(12F)
-        val textBgStartX = progress * (progressBarRealWidth) / maxProgress - textBgWidth / maxProgress * progress + dia
+        val textBgStartX = progress.toFloat() * (progressBarRealWidth) / maxProgress - textBgWidth.toFloat() / maxProgress * progress + dia
         val textBgEndX = textBgStartX + textBgWidth
         Log.e(TAG, "width $width, textBgWidth $textBgWidth, textBgStartX $textBgStartX")
         canvas.drawRoundRect(textBgStartX
