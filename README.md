@@ -1,6 +1,8 @@
 # CustomSeekBar
 防喜马拉雅6.6.21.3播放进度条
 
+[博客地址](https://blog.csdn.net/hqiong208/article/details/106211885)
+
 ## 使用
 ```xml
 <!--布局文件引入-->
