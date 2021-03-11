@@ -1,5 +1,5 @@
 # CustomSeekBar
-防喜马拉雅6.6.21.3播放进度条
+防喜马拉雅6.6.21.3播放进度条，[java kotlin]
 
 [博客地址](https://blog.csdn.net/hqiong208/article/details/106211885)
 
